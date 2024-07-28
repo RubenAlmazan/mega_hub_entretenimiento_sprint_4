@@ -1,0 +1,26 @@
+<app-navbar></app-navbar>
+
+<title>Configuracion</title>
+
+<div id="inicio" class="bienvenida">
+    <p id="titulo"><b> Configuracion </b></p>
+</div>
+
+<div *ngIf="item">
+    <p style="text-align: center; font-size: 18px;">
+        Si deseas restablecer la configuración de contenido a su estado inicial, por favor haz clic en el siguiente botón. 
+        <br><br>
+        Esta acción devolverá todos los contenidos a su estado predeterminado, lo que significa que cualquier cambio realizado en la configuración actual será revertido. 
+        <br><br>
+        Todos los elementos y contenidos que puedan estar ocultos o modificados se mostrarán de nuevo y estarán disponibles como estaban originalmente. 
+        <br><br>
+    </p>
+
+    <div style="display: flex; justify-content: center; align-items: center; text-align: center;">
+
+        <button id="toggle-mode" class="modo-button">
+            <a (click)="restaurarValores(idUsuario)"> Restaurar Valores </a>
+        </button>
+    </div>
+
+</div>

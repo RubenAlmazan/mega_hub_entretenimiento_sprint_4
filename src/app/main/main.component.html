@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega+ | Pagina Principal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            /* Elimina el margen predeterminado */
+            padding: 0;
+            /* Elimina el relleno predeterminado */
+            box-sizing: border-box;
+            height: auto;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #eslogan {
+            text-align: center;
+            font-weight: bold;
+            /* Opcional para que el texto sea negrita */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="icono.ico" style="width: 26px; height: 26px; margin-bottom: -4px;" alt="Logo">
+                MEGA+
+            </div>
+            <div>
+                <a (click)="visible()" id="juegos-link"><i class="fas fa-bars"></i></a>
+            </div>
+        </div>
+
+        <div class="navbar-juegos hidden">
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            <a href="/main">
+                                <i class="fas fa-film"></i>
+                                Películas
+                            </a>
+                        </th>
+                        <th>
+                            <div *ngIf="item">
+                                <a (click)="ObtenerFavorito(item.id)">
+                                    <i class="fas fa-heart"></i>
+                                    Favoritos
+                                </a>
+                            </div>
+                        </th>
+                        <th>
+                            <div *ngIf="item">
+                                <a (click)="cambiarConfiguracion(item.id)">
+                                    <i class="fas fa-cog"></i>
+                                    Configuración
+                                </a>
+                            </div>
+                        </th>
+                        <th>
+                            <a href="/inicio">
+                                <i class="fas fa-sign-out-alt"></i>
+                                Cerrar Sesión
+                            </a>
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </header>
+
+    <div id="inicio" class="bienvenida">
+        <p id="titulo"><b>Bienvenido a MEGA+</b></p>
+        <p id="eslogan" style="text-align: center;"><b>Todo el mejor entretenimiento, en un SOLO lugar</b></p>
+    </div>
+
+    <div class="image-container">
+        <div *ngFor="let item of lista">
+            <p style="margin-bottom: 1px">{{ item.tipo }}</p>
+            <a (click)="ObtenerDetalle(item.id)" class="image-link">
+                <img class="item-imagen" src="{{ item.imagen }}" alt="{{ item.clave }}">
+            </a>
+            <p class="item-nombre">{{ item.nombre }}</p>
+        </div>
+    </div>
+    <br>
+
+</body>
+
+</html>

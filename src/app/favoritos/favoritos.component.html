@@ -1,0 +1,17 @@
+<app-navbar></app-navbar>
+
+<title>Favoritos</title>
+
+<div id="inicio" class="bienvenida">
+    <p id="titulo"><b>Favoritos</b></p>
+</div>
+
+<div class="image-container">
+    <div *ngFor="let item of lista">
+        <p style="margin-bottom: 1px">{{ item.tipo }}</p>
+        <a (click)="ObtenerDetalleFavorito(item.id)" class="image-link">
+            <img class="item-imagen" src="{{ item.imagen }}" alt="{{ item.clave }}">
+        </a>
+        <p class="item-nombre">{{ item.nombre }}</p>
+    </div>
+</div>
