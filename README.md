@@ -10,38 +10,61 @@ A nivel técnico, esta plataforma representa la continuacion de nuestro aprendiz
 ## Objetivo
 
 --> Crear una base de datos utilizando SQL Server.
+
 --> Implementar la base de datos dentro del sistema de entretenimiento.
+
 --> Consumir datos utilizando API (Express).
+
 --> Crear un login validado utilizando los registros de la base de datos.
+
 --> Estabelcer medidas de seguridad para el login y registro  de los usuarios con el objetivo de evitar ciberataques. 
+
 --> Desarrollo de fuciones adiciones utilizando la base de datos. 
 
 ## Requerimientos técnicos
 
 --> Visual Studio Code
+
 --> Node v20.13.1
+
 --> npm v10.5.2
+
 --> Angular CLI 18.1.0
+
 --> TypeScript v5.5.2
+
 --> SQL Server Management Studio 20
+
 
 ## Bibliotecas implementadas
 
 --> body-parser: Versión 1.20.2
+
 --> cors: Versión 2.8.5
+
 --> dotenv: Versión 16.4.5
+
 --> express: Versión 4.19.2
+
 --> mssql: Versión 11.0.1
+
 --> nodemon : Versión 3.1.4
+
 
 ## Descripción de bibliotecas implementadas
 
 --> body-parser: Analiza el cuerpo de las solicitudes HTTP, permitiendo que Express pueda leer y procesar datos enviados en el cuerpo de la solicitud, como JSON o datos de formularios.
+
 --> cors: Permite la configuración de CORS en una aplicación Express, habilitando el acceso a recursos de un servidor desde dominios diferentes al del servidor.
+
 --> dotenv: Carga variables de entorno desde un archivo .env en el directorio raíz del proyecto, facilitando la configuración del sistema y el manejo de datos sensibles sin codificarlos directamente en el código fuente.
+
 --> express: Facilita la creación de aplicaciones web y APIs, proporcionando herramientas para manejar rutas, middleware y solicitudes HTTP de manera eficiente.
+
 --> mssql: Cliente para Node.js que permite interactuar con bases de datos Microsoft SQL Server, facilitando la ejecución de consultas SQL y la gestión de datos en aplicaciones basadas en SQL Server.
+
 --> nodemon:  Facilita el desarrollo de aplicaciones Node.js al proporcionar una forma automática de reiniciar el servidor cada vez que se realizan cambios en el código fuente. 
+
 
 ## Visualización del proyecto
 
@@ -80,36 +103,63 @@ A nivel técnico, esta plataforma representa la continuacion de nuestro aprendiz
 En el caso de la instalacion del proyecto, estas son las instrucciones:
 
 --> Descargar el proyecto
+
 --> Descomprimir la carpeta en la ubicación requerida
+
 --> Descargar Nodejs
+
 --> Instalar Nodejs en el equipo
+
 --> Acceder a Visual Studio Code
+
 --> Abrir el proyecto en Visual Studio Code
+
 --> Abrir la terminal
+
 --> En la terminal, utilizar el comando npm install -g @angular/cli para instalar Angular
+
 --> Ejecutar ng serve para iniciar el proyecto
+
 ¡Listo! El proyecto está disponible.
+
+(Nota: Para visualizar el inicio del proyecto, inicie en la ruta /inicio)
 
 En el caso de la instalacion del API para conectar la base de datos, estas son las instrucciones:
 
 --> Acceder a Visual Studio Code
+
 --> Abrir una Nueva Terminal (Nota: Abrir una nueva terminal a la par de que se ejecuta el proyecto de Angular)
+
 --> Dirígirse a la carpeta donde se quiere guardar la API
+
 --> Crear el archivo value.js en el directorio del proyecto. Este archivo contendrá la configuración de tu API.
+
 --> Ejecutar el siguiente comando para instalar las bibliotecas necesarias para la API:
+
 npm install body-parser cors dotenv express mssql nodemon
+
 --> Configurar la API según se requiera en el archivo value.js
+
 --> Crear archivo .env para guardar las variables de entorno
 
+
 DB_SERVER=           # Nombre o IP del servidor SQL
+
 DB_DATABASE=         # Nombre de la base de datos
+
 DB_USER=             # Usuario para la conexión
+
 DB_PASSWORD=         # Contraseña para el usuario
+
 DB_PORT=             # Puerto de conexión, 1433 es el valor 
+
 DB_ENCRYPT=                # Usa cifrado si es necesario
+
 DB_TRUST_CERTIFICATE=      # Confía en el certificado del servidor si es necesario
 
+
 --> Ejecutar la API utilizando el siguiente comando:
+
 node value.js / nodemon value.js
 
 ¡Listo! La API estará en funcionamiento y conectada a la base de datos.
@@ -117,6 +167,7 @@ node value.js / nodemon value.js
 Por último, en el caso de las pruebas unitarias, estas son las instrucciones:
 
 --> ng test: Este se utiliza para ejecutar las pruebas unitarias
+
 --> ng test --code-coverage: Este se utiliza para ver el code coverage de las pruebas unitarias
 
 ## Descripción de como se realizó
@@ -140,18 +191,23 @@ Por último, se adaptó el sistema para consumir los recursos de la base de dato
 ## Problemas conocidos
 
 --> Reestrucutracion de componentes de Angular
+
 --> Entender el funcionamiento de la API para ser conectada correctamente en el sistema
+
 --> Acceder a los registros disponibles en la base de datos 
 
 ## Retrospectiva
 
 ¿Qué hice bien?
+
 Implementar mis conocmientos en base de datos para crear una estrucutra eficniete dentro del sistemas y utlizar los conocmientos recietemente aprendidos (API, Angular, etc) para elaborar las funciones requeridas y necesarias para el correcto desarrollo de este proyecto .
 
 ¿Qué no salio bien?
+
 Organización personal y tardar demasiado tiempo en comprender conceptos importantes para la implementación de la API y del acceso a los datos en el sistema de entretenimiento. 
 
 ¿Qué puedo hacer diferente?
+
 Aprender sobre el correcto funcionamiento de la API, implementar funciones avanzadas y generar una estructura más detallada en la base de datos y organizar mejor mis tiempos de desarrollo por función. 
 
 # Instrucciones de Angular para su instalación
