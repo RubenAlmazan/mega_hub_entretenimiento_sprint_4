@@ -53,8 +53,6 @@ A nivel técnico, esta plataforma representa la continuacion de nuestro aprendiz
 
 ![image](https://github.com/user-attachments/assets/b0fd2b4d-2b25-4e28-9caf-a12da583073e)
 
-![image](https://github.com/user-attachments/assets/fbe8fa8e-17e4-4293-ab20-28c6c4b120ad)
-
 ![image](https://github.com/user-attachments/assets/1266506a-c48c-49c1-81ff-a37166a84992)
 
 ![image](https://github.com/user-attachments/assets/e7e4c7da-cdbc-41fd-ad8b-74f6238e4358)
